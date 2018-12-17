@@ -124,12 +124,7 @@ int main(int argc, char *argv[])
 
     qDebug() << "Board revision is " << rev;
 
-    int gpioChannel;
-
-    if (rev == 2 || rev == 3)
-        gpioChannel = 0;
-    else
-        gpioChannel = 2;
+    int gpioChannel = 70;
 
     QApplication a(argc, argv);
     RightButtonFilter rbf;
